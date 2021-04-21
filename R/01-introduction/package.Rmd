@@ -1,0 +1,22 @@
+---
+Packages
+---
+
+
+```{r}
+install.packages("e1071")
+library(e1071)
+```
+
+```{r}
+# detach package from memory
+detach("package:e1071", unload=TRUE)
+#remove
+remove.packages("e1071")
+```
+```{r}
+plot(iris[,1:4])
+```
+
+
+
