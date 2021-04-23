@@ -1,0 +1,51 @@
+-- data Types and operators
+
+```{r}
+# implicite numeric declaration
+
+delta = 8
+class(delta)
+```
+
+L cast to integer
+
+```{r}
+delta = 8L
+class(delta)
+```
+
+Other types
+
+```{r}
+logic = TRUE
+logic = F
+class(logic)
+caracter = "Text"
+caracter = 'Text'
+class(caracter)
+```
+
+Math operations
+
+```{r}
+c = 2
+d = 4
+(c + d) * d
+e = (c+d) *d
+e
+```
+
+Logical tests
+
+```{r}
+a = 1
+b = 2
+a < b
+a == b
+```
+
+Square root
+
+```{r}
+sqrt(540)
+```
