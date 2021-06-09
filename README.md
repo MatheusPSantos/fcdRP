@@ -2,24 +2,25 @@
 
 ### 1 - R Introduction:
   R pratices:
-  [x]Ambiente do R
   
-  [x] Pacotes
+  [x] R environment
   
-  [x] Aspectos Diversos
+  [x] Packages
   
-  [x] Tipos de Dados e Operadores
+  [x] Miscellaneous Aspects
   
-  [x] Estruturas de Dados
+  [x] Data types and operators
   
-  [x] Funções
+  [x] Data Structures
   
-  [x] Ajuda
+  [x] Functions
   
-  [ ] Principais Funções
+  [x] Help
   
-  [ ] Importando Dados
+  [ ] Main Functions
   
-  [ ] Programação
+  [ ] Importing data
   
-  [ ] Faça você mesmo
+  [ ] Programming
+  
+  [ ] Do yourself
