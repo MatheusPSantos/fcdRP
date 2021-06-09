@@ -1,0 +1,46 @@
+Mainfunctions
+
+Head and Tail
+```{r}
+esoph
+#default 6 rows
+head(esoph)
+tail(esoph)
+
+#10 rows
+head(esoph, n = 10)
+tail(esoph, n = 10)
+```
+Dimensions
+-> number os lines and columns
+```{r}
+dim(esoph)
+dim(esoph)[1] # retrun number os rows
+dim(esoph)[2] # return number of columns
+```
+Length
+```{r}
+length(islands)
+
+```
+Name of columns
+```{r}
+
+colnames(esoph)
+
+```
+Name of rows
+```{r}
+rownames(esoph) # if the row not have name, will return the index of row
+```
+Resume
+```{r}
+summary(esoph)
+```
+Choose file
+
+```{r}
+x = file.choose()
+x
+```
+
