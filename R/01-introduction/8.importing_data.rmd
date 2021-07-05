@@ -1,0 +1,24 @@
+Impoting data
+
+```{r}
+#install.packages("xlsx")
+library(xlsx)
+```
+Text File
+```{r}
+#text
+x = read.csv(file.choose(), header=TRUE, sep=",") #the file, choose the first line is haeader of csv, separetor is ',' in cvs file
+x
+x = read.csv("filename.csv", header = TRUE, sep=",")
+x
+```
+
+
+Excel file
+```{r}
+
+d = read.xlsx("filename.xlsx", sheetIndex = 1) # the name of the file, the index in file explorer of the file7
+d  # transform the data in dataframe
+
+```
+

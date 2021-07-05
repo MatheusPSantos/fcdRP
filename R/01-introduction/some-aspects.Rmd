@@ -1,0 +1,42 @@
+--
+some aspects
+--
+Directory folder
+```{r}
+getwd()
+setwd("~/Documentos")
+```
+
+Object Type
+```{r}
+class(iris)
+```
+Save one object
+```{r}
+#clone
+iristest = iris
+
+#save
+save(iristest, file="filename.Rdata")
+
+#remove from r
+rm(iristest)
+# test remove
+iristest
+```
+Load
+```{r}
+# load object from disk
+load(file="filename.Rdata")
+#test
+iristest
+```
+Vector and basic graph
+```{r}
+
+x = c(12,34,56,79)
+y = c(1,6,9,14)
+
+plot(x,y)
+```
+

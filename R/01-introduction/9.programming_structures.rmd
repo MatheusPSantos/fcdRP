@@ -1,0 +1,46 @@
+IF
+
+```{r}
+a = 10
+b = 20
+if( a < b) {
+  print("True")
+}
+
+if(a < b) {
+  print("true")
+} else {
+  print("false")
+}
+```
+Ifelse
+```{r}
+x = ifelse(a > 10, "A is greater than 10", "A is not greater than 10")
+x
+```
+FOR
+```{r}
+
+for (i in 1:1000) {
+  print(i)
+}
+```
+WHILE
+```{r}
+a  = 1
+while(a <= 10) {
+  print(a)
+  a = a+1
+}
+```
+
+Function
+```{r}
+evenodd <- function(x) {
+  return (ifelse(x%%2 == 0, "EVEN", "ODD"))
+}
+
+evenodd(6)
+evenodd(7)
+```
+

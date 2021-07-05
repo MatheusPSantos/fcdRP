@@ -1,0 +1,77 @@
+--
+Data strucutre
+--
+
+```{r}
+# Vector -> one dimension structure, need contain one type
+X = c(1,2,3,4)
+class(X)
+X
+X[1]
+X[1] = 10
+X[1]
+
+```
+Other types in vector
+```{r}
+Y = c("a", "b", "c", "d")
+class(Y)
+
+Y
+Z = c(1L,2L,3L)
+class(Z)
+Z
+```
+
+Matrices
+```{r}
+VADeaths
+y <- colnames(VADeaths)
+x <- rownames(VADeaths)
+y
+x
+plot(VADeaths)
+```
+Matrices
+```{r}
+# only col 1
+VADeaths[,1]
+# only row 1
+VADeaths[1,]
+# lines 1 to 3
+VADeaths[1:3,]
+VADeaths[c(1,3,5),]
+```
+Data Frame
+```{r}
+longley
+# works like matrices
+longley[,1:3]
+longley[1:4, 1:2]
+# access col using $
+longley$Unemployed
+# or name
+longley['Unemployed']
+```
+
+Lists
+```{r}
+ability.cov
+#access elements
+ability.cov$cov
+ability.cov[1]
+# verify what different objects
+class(ability.cov$cov)
+class(ability.cov$center)
+# accessing data inside the list
+ability.cov$cov[,1:3]
+
+```
+
+Factors
+```{r}
+
+state.region
+sort(state.region)
+```
+
