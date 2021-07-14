@@ -1,0 +1,62 @@
+---
+title: "Cleaning and data processing"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+# import data, void string with NA, string with factors
+d = read.csv("dados/Churn.csv", sep = ";", na.strings = "", stringsAsFactors = T)
+head(d)
+summary(d)
+```
+Columns
+```{r}
+
+# Put names in the columns
+colnames(d) = c("Id", "Score", "Estado", "Genero", "Idade", "Patrimonio", "Saldo", "Produtos", "TemCreditCard", "Ativo", "Salario", "Saiu")
+head(d)
+```
+Explore data, categorical columns
+```{r}
+#Estados
+counts = table(d$Estado)
+barplot(counts, main="Estados", xlab="Estados") # bar graph
+# Gêneros
+counts = table(d$Genero)
+barplot(counts, main="Gêneros", xlab="Gêneros")
+```
+
+Explore, numerical columns
+```{r}
+
+#Score
+summary(d$Score) # returns the median mean and quartis
+boxplot(d$Score)
+hist(d$Score)
+```
+Age
+```{r}
+
+summary(d$Idade)
+boxplot(d$Idade)
+hist(d$Idade)
+```
+Saldo
+```{r}
+saldo = d$Saldo
+summary(saldo)
+boxplot(saldo)
+hist(saldo)
+```
+Salary
+```{r}
+salary = d$Salario
+summary(salary)
+boxplot(salary)
+hist(salary)
+```
+
