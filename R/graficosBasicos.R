@@ -61,3 +61,33 @@ plot(trees$Height, trees$Volume)
 screen(4)
 hist(trees$Volume)
 close.screen(all=TRUE)
+
+# Gráficos Básicos parte 2
+
+# Boxplot - é um gráfico interessante para compreender como os dados estão distribuídos
+boxplot(trees$Volume, main="Árvores", xlab="volume")
+boxplot(trees$Volume, main="Árvores", xlab="volume", col="blue", horizontal=TRUE)
+boxplot(trees$Volume, main="Árvores", xlab="volume", col="blue", outline=F)
+boxplot(trees$Volume, main="Árvores", xlab="volume", col="blue", notch=TRUE) #notch
+boxplot.stats(trees$Height)
+boxplot.stats(trees$Height)$stats
+
+# pode comparar várias variáveis ao mesmo tempo
+boxplot(trees)
+
+
+# Agregação
+InsectSprays
+spray = aggregate(. ~spray, data=InsectSprays, sum)
+spray
+
+# Gráficos de barras
+barplot(spray$count, col=gray.colors(6), xlab="Spray", ylab="Total", names.arg=spray$spray)
+box()
+
+# Gráfico de setor - pizza
+pie(spray$count, labels=spray$spray, main="Spray", col=c(1:6))
+# adicionando legenda
+pie(spray$count, labels=NA, main="Spray", col=c(1:6))
+legend("bottomright", legend=spray$spray, cex=1, fill = c(1:6))
+
