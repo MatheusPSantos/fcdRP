@@ -1,26 +1,6 @@
 # fcdRP
 
-### 1 - R Introduction:
-  R pratices:
-  
-  [x] R environment
-  
-  [x] Packages
-  
-  [x] Miscellaneous Aspects
-  
-  [x] Data types and operators
-  
-  [x] Data Structures
-  
-  [x] Functions
-  
-  [x] Help
-  
-  [ ] Main Functions
-  
-  [ ] Importing data
-  
-  [ ] Programming
-  
-  [ ] Do yourself
+Formação em Ciência de Dados com R e Python.
+
+### Notas
+- <a href="Estatística I.md">Estatística 1</a>
